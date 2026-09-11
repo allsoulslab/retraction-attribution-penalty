@@ -1,0 +1,2316 @@
+{
+ "generated": "2026-08-26T23:35:16",
+ "source": "API extraction",
+ "note": "Column names, dtypes and value conventions that any replacement implementation must reproduce. Row counts are benchmarks, not requirements: a different data vintage will move them.",
+ "files": {
+  "phase01_classified": {
+   "path": "data/interim/phase01_classified.csv",
+   "rows_total": 71799,
+   "rows_sampled": 71799,
+   "columns": [
+    {
+     "name": "Record ID",
+     "dtype": "float64",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 71535,
+     "examples": [
+      "72272.0",
+      "72271.0",
+      "72269.0"
+     ],
+     "min": 1.0,
+     "max": 72272.0,
+     "integral_float": true
+    },
+    {
+     "name": "Title",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 68929,
+     "examples": [
+      "Recommendation system to improve students performance using machine learning",
+      "A critical review of mercury speciation, bioavailability, toxicity and detoxification in soil-plant environment: Ecotoxicology and health risk assessment",
+      "High-throughput screening of ancient forest plant extracts shows cytotoxicity towards triple-negative breast cancer"
+     ],
+     "has_url_prefix": false,
+     "max_len": 392
+    },
+    {
+     "name": "Journal",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 8734,
+     "examples": [
+      "IOP Conference Series: Materials Science and Engineering",
+      "Science of The Total Environment",
+      "Environment International"
+     ],
+     "has_url_prefix": false,
+     "max_len": 455
+    },
+    {
+     "name": "Publisher",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 1710,
+     "examples": [
+      "IOP Publishing",
+      "Elsevier",
+      "Elsevier"
+     ],
+     "has_url_prefix": false,
+     "max_len": 500
+    },
+    {
+     "name": "Subject",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 17400,
+     "examples": [
+      "(B/T) Business - Management;(B/T) Computer Science;(SOC) Education;",
+      "(BLS) Toxicology;(ENV) Ecology;(ENV) Environmental Sciences;",
+      "(HSC) Medicine - Drug Design;(HSC) Medicine - Oncology;"
+     ],
+     "has_url_prefix": false,
+     "max_len": 263
+    },
+    {
+     "name": "Country",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 3611,
+     "examples": [
+      "India",
+      "Australia;France;Pakistan",
+      "China;Denmark;India;Malaysia;Norway;Taiwan"
+     ],
+     "has_url_prefix": false,
+     "max_len": 250
+    },
+    {
+     "name": "Author",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 64769,
+     "examples": [
+      "P Ramya;S G Balakrishnan;M Kannan",
+      "Natasha;Muhammad Shahid;Sana Khalid;Irshad Bibi;Jochen Bundschuh;Nabeel Khan Niazi;Camille Dumat",
+      "Yiyang Li;Nyuk Ling Ma;Huiling Chen;Jiateng Zhong;Dangquan Zhang;Wanxi Peng;Su Shiung Lam;Yafeng Yang;Xiaochen Yue;Lijun Yan;Ting Wang;Bjarne Styrishave;Tomasz Maciej Ciesielski;Christian Sonne"
+     ],
+     "has_url_prefix": false,
+     "max_len": 1498
+    },
+    {
+     "name": "RetractionNature",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 4,
+     "examples": [
+      "Retraction",
+      "Retraction",
+      "Correction"
+     ],
+     "has_url_prefix": false,
+     "max_len": 21
+    },
+    {
+     "name": "Reason",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 11440,
+     "examples": [
+      "Author Unresponsive;Computer-Aided Content or Computer-Generated Content;Investigation by Journal/Publisher;Investigation by Third Party;",
+      "Concerns/Issues about Referencing/Attributions;Investigation by Journal/Publisher;Investigation by Third Party;",
+      "Error in Text;Updated to Retraction;"
+     ],
+     "has_url_prefix": false,
+     "max_len": 511
+    },
+    {
+     "name": "Category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 7,
+     "examples": [
+      "AUTHOR_MISCONDUCT",
+      "UNCONFIRMED_CONCERNS",
+      "HONEST_ERROR"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "RetractionDate",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 6296,
+     "examples": [
+      "2026-05-07",
+      "2026-08-08",
+      "2026-06-17"
+     ],
+     "has_url_prefix": false,
+     "max_len": 10
+    },
+    {
+     "name": "OriginalPaperDate",
+     "dtype": "object",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 7721,
+     "examples": [
+      "2020-06-26",
+      "2019-11-04",
+      "2023-10-29"
+     ],
+     "has_url_prefix": false,
+     "max_len": 10
+    },
+    {
+     "name": "RetractionYear",
+     "dtype": "float64",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 58,
+     "examples": [
+      "2026.0",
+      "2026.0",
+      "2026.0"
+     ],
+     "min": 1756.0,
+     "max": 2026.0,
+     "integral_float": true
+    },
+    {
+     "name": "OriginalYear",
+     "dtype": "float64",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 79,
+     "examples": [
+      "2020.0",
+      "2019.0",
+      "2023.0"
+     ],
+     "min": 1753.0,
+     "max": 2026.0,
+     "integral_float": true
+    },
+    {
+     "name": "LagYears",
+     "dtype": "float64",
+     "null_share": 0.0037,
+     "n_unique_in_sample": 5681,
+     "examples": [
+      "5.861738535249829",
+      "6.759753593429158",
+      "2.6338124572210813"
+     ],
+     "min": 0.0,
+     "max": 81.10061601642711
+    },
+    {
+     "name": "NLabels",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 18,
+     "examples": [
+      "4",
+      "3",
+      "2"
+     ],
+     "min": 0.0,
+     "max": 17.0
+    },
+    {
+     "name": "OriginalPaperDOI",
+     "dtype": "object",
+     "null_share": 0.0388,
+     "n_unique_in_sample": 62711,
+     "examples": [
+      "10.1088/1757-899X/872/1/012038",
+      "10.1016/j.scitotenv.2019.134749",
+      "10.1016/j.envint.2023.108279"
+     ],
+     "has_url_prefix": false,
+     "max_len": 68,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "RetractionDOI",
+     "dtype": "object",
+     "null_share": 0.0104,
+     "n_unique_in_sample": 60545,
+     "examples": [
+      "10.1088/1757-899X/872/1/012203",
+      "10.1016/j.scitotenv.2026.182141",
+      "10.1016/j.envint.2026.110362"
+     ],
+     "has_url_prefix": false,
+     "max_len": 68,
+     "looks_like": "bare doi"
+    }
+   ]
+  },
+  "phase02_author_paper": {
+   "path": "data/interim/phase02_author_paper.csv",
+   "rows_total": 78107,
+   "rows_sampled": 78107,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 63015,
+     "examples": [
+      "A5073517018",
+      "A5112555413",
+      "A5064447648"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "author_display_name",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 56130,
+     "examples": [
+      "Itamar Raz",
+      "Anette G. Ziegler",
+      "Thomas Linn"
+     ],
+     "has_url_prefix": false,
+     "max_len": 190
+    },
+    {
+     "name": "position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "first",
+      "middle",
+      "middle"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "is_corresponding",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "country",
+     "dtype": "object",
+     "null_share": 0.088,
+     "n_unique_in_sample": 147,
+     "examples": [
+      "IL",
+      "DE",
+      "AT"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "institution_id",
+     "dtype": "object",
+     "null_share": 0.0853,
+     "n_unique_in_sample": 7445,
+     "examples": [
+      "I3131873961",
+      "I268975460",
+      "I4210120910"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "doi",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 17330,
+     "examples": [
+      "10.2337/dc13-1391",
+      "10.2337/dc13-1391",
+      "10.2337/dc13-1391"
+     ],
+     "has_url_prefix": false,
+     "max_len": 43,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "openalex_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 17330,
+     "examples": [
+      "W2091554294",
+      "W2091554294",
+      "W2091554294"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 42,
+     "examples": [
+      "2014",
+      "2014",
+      "2014"
+     ],
+     "min": 1951.0,
+     "max": 2022.0
+    },
+    {
+     "name": "n_authors",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 40,
+     "examples": [
+      "21",
+      "21",
+      "21"
+     ],
+     "min": 1.0,
+     "max": 100.0
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0159,
+     "n_unique_in_sample": 4194,
+     "examples": [
+      "S49878492",
+      "S49878492",
+      "S49878492"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "retraction_date",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2475,
+     "examples": [
+      "2015-01-01",
+      "2015-01-01",
+      "2015-01-01"
+     ],
+     "has_url_prefix": false,
+     "max_len": 10
+    },
+    {
+     "name": "retraction_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2015.0",
+      "2015.0",
+      "2015.0"
+     ],
+     "min": 2015.0,
+     "max": 2022.0,
+     "integral_float": true
+    },
+    {
+     "name": "category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "AUTHOR_MISCONDUCT",
+      "AUTHOR_MISCONDUCT",
+      "AUTHOR_MISCONDUCT"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "rw_journal",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4444,
+     "examples": [
+      "Diabetes Care",
+      "Diabetes Care",
+      "Diabetes Care"
+     ],
+     "has_url_prefix": false,
+     "max_len": 249
+    },
+    {
+     "name": "rw_publisher",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 651,
+     "examples": [
+      "American Diabetes Association",
+      "American Diabetes Association",
+      "American Diabetes Association"
+     ],
+     "has_url_prefix": false,
+     "max_len": 382
+    }
+   ]
+  },
+  "phase02_paper_level": {
+   "path": "data/interim/phase02_paper_level.csv",
+   "rows_total": 17330,
+   "rows_sampled": 17330,
+   "columns": [
+    {
+     "name": "openalex_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 17330,
+     "examples": [
+      "W2091554294",
+      "W1677132657",
+      "W2016877956"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "doi",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 17330,
+     "examples": [
+      "10.2337/dc13-1391",
+      "10.1007/978-3-540-77901-8",
+      "10.1016/j.ijpharm.2012.05.025"
+     ],
+     "has_url_prefix": false,
+     "max_len": 43,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 42,
+     "examples": [
+      "2014",
+      "2008",
+      "2012"
+     ],
+     "min": 1951.0,
+     "max": 2022.0
+    },
+    {
+     "name": "n_authors",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 40,
+     "examples": [
+      "21",
+      "1",
+      "4"
+     ],
+     "min": 1.0,
+     "max": 100.0
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0327,
+     "n_unique_in_sample": 4194,
+     "examples": [
+      "S49878492",
+      "S131016564",
+      "S80991962"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "retraction_date",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2475,
+     "examples": [
+      "2015-01-01",
+      "2015-01-01",
+      "2015-01-01"
+     ],
+     "has_url_prefix": false,
+     "max_len": 10
+    },
+    {
+     "name": "retraction_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2015.0",
+      "2015.0",
+      "2015.0"
+     ],
+     "min": 2015.0,
+     "max": 2022.0,
+     "integral_float": true
+    },
+    {
+     "name": "category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "AUTHOR_MISCONDUCT",
+      "AUTHOR_MISCONDUCT",
+      "AUTHOR_MISCONDUCT"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "rw_journal",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4444,
+     "examples": [
+      "Diabetes Care",
+      "Fundamentals of Biochemical Engineering",
+      "International Journal of Pharmaceutics"
+     ],
+     "has_url_prefix": false,
+     "max_len": 249
+    },
+    {
+     "name": "rw_publisher",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 651,
+     "examples": [
+      "American Diabetes Association",
+      "Springer",
+      "Elsevier"
+     ],
+     "has_url_prefix": false,
+     "max_len": 382
+    }
+   ]
+  },
+  "phase03_authors_screened": {
+   "path": "data/interim/phase03_authors_screened.csv",
+   "rows_total": 63015,
+   "rows_sampled": 63015,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 63015,
+     "examples": [
+      "A5000000833",
+      "A5000001550",
+      "A5000006808"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "author_display_name",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 56130,
+     "examples": [
+      "Betty Van Roy",
+      "Monami Chakraborty",
+      "Marieke J. Krimphove"
+     ],
+     "has_url_prefix": false,
+     "max_len": 190
+    },
+    {
+     "name": "first_position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "middle",
+      "middle",
+      "middle"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "is_corresponding",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "country",
+     "dtype": "object",
+     "null_share": 0.0895,
+     "n_unique_in_sample": 147,
+     "examples": [
+      "NO",
+      "IN",
+      "US"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "institution_id",
+     "dtype": "object",
+     "null_share": 0.0865,
+     "n_unique_in_sample": 7278,
+     "examples": [
+      "I2800192669",
+      "I145894827",
+      "I1283280774"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "doi",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 15993,
+     "examples": [
+      "10.1136/bmjpo-2019-000620",
+      "10.1371/journal.pone.0094472",
+      "10.1093/jncics/pkz003"
+     ],
+     "has_url_prefix": false,
+     "max_len": 43,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "openalex_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 15993,
+     "examples": [
+      "W3015365171",
+      "W2059711165",
+      "W2911615344"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 41,
+     "examples": [
+      "2020",
+      "2014",
+      "2019"
+     ],
+     "min": 1951.0,
+     "max": 2022.0
+    },
+    {
+     "name": "n_authors",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 40,
+     "examples": [
+      "8",
+      "4",
+      "13"
+     ],
+     "min": 1.0,
+     "max": 100.0
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0174,
+     "n_unique_in_sample": 4049,
+     "examples": [
+      "S4306504555",
+      "S202381698",
+      "S2735282665"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "retraction_date",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2443,
+     "examples": [
+      "2020-10-01",
+      "2017-10-23",
+      "2020-10-17"
+     ],
+     "has_url_prefix": false,
+     "max_len": 10
+    },
+    {
+     "name": "first_retraction_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2020.0",
+      "2017.0",
+      "2020.0"
+     ],
+     "min": 2015.0,
+     "max": 2022.0,
+     "integral_float": true
+    },
+    {
+     "name": "first_category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "EDITORIAL_COMPROMISE",
+      "AUTHOR_MISCONDUCT",
+      "HONEST_ERROR"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "rw_journal",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4295,
+     "examples": [
+      "BMJ Paediatrics Open",
+      "PLoS One",
+      "JNCI Cancer Spectrum"
+     ],
+     "has_url_prefix": false,
+     "max_len": 249
+    },
+    {
+     "name": "rw_publisher",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 637,
+     "examples": [
+      "Springer - Biomed Central (BMC)",
+      "PLoS",
+      "Oxford University Press"
+     ],
+     "has_url_prefix": false,
+     "max_len": 382
+    },
+    {
+     "name": "n_retractions",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 42,
+     "examples": [
+      "1",
+      "2",
+      "1"
+     ],
+     "min": 1.0,
+     "max": 122.0
+    },
+    {
+     "name": "n_categories",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 5,
+     "examples": [
+      "1",
+      "1",
+      "1"
+     ],
+     "min": 1.0,
+     "max": 5.0
+    },
+    {
+     "name": "found",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 1.0,
+     "max": 1.0
+    },
+    {
+     "name": "works_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1485,
+     "examples": [
+      "27",
+      "3",
+      "57"
+     ],
+     "min": 1.0,
+     "max": 12493.0
+    },
+    {
+     "name": "cited_by_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 13172,
+     "examples": [
+      "1283",
+      "61",
+      "818"
+     ],
+     "min": 0.0,
+     "max": 359480.0
+    },
+    {
+     "name": "first_pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 202,
+     "examples": [
+      "2004",
+      "2014",
+      "1975"
+     ],
+     "min": 1556.0,
+     "max": 2022.0
+    },
+    {
+     "name": "last_pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 42,
+     "examples": [
+      "2023",
+      "2015",
+      "2023"
+     ],
+     "min": 1975.0,
+     "max": 2034.0
+    },
+    {
+     "name": "last_institution",
+     "dtype": "object",
+     "null_share": 0.0977,
+     "n_unique_in_sample": 10503,
+     "examples": [
+      "Akershus University Hospital",
+      "Indian Institute of Technology Kharagpur",
+      "Goethe University Frankfurt"
+     ],
+     "has_url_prefix": false,
+     "max_len": 156
+    },
+    {
+     "name": "last_country",
+     "dtype": "object",
+     "null_share": 0.0996,
+     "n_unique_in_sample": 163,
+     "examples": [
+      "NO",
+      "IN",
+      "DE"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "career_span",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 206,
+     "examples": [
+      "19",
+      "1",
+      "48"
+     ],
+     "min": 0.0,
+     "max": 470.0
+    },
+    {
+     "name": "pre_years",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 200,
+     "examples": [
+      "16.0",
+      "3.0",
+      "45.0"
+     ],
+     "min": 0.0,
+     "max": 463.0,
+     "integral_float": true
+    },
+    {
+     "name": "post_years",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "5.0",
+      "8.0",
+      "5.0"
+     ],
+     "min": 3.0,
+     "max": 10.0,
+     "integral_float": true
+    },
+    {
+     "name": "pass_found",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 1.0,
+     "max": 1.0
+    },
+    {
+     "name": "pass_works",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "pass_pre",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "pass_post",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 1.0,
+     "max": 1.0
+    },
+    {
+     "name": "passes",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    }
+   ]
+  },
+  "phase04_author_queue": {
+   "path": "data/interim/phase04_author_queue.csv",
+   "rows_total": 55202,
+   "rows_sampled": 55202,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 55202,
+     "examples": [
+      "A5000000833",
+      "A5000001550",
+      "A5000006808"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "author_display_name",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 48651,
+     "examples": [
+      "Betty Van Roy",
+      "Monami Chakraborty",
+      "Marieke J. Krimphove"
+     ],
+     "has_url_prefix": false,
+     "max_len": 190
+    },
+    {
+     "name": "first_retraction_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2020.0",
+      "2017.0",
+      "2020.0"
+     ],
+     "min": 2015.0,
+     "max": 2022.0,
+     "integral_float": true
+    },
+    {
+     "name": "first_category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "EDITORIAL_COMPROMISE",
+      "AUTHOR_MISCONDUCT",
+      "HONEST_ERROR"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "first_position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "middle",
+      "middle",
+      "middle"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "n_retractions",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 42,
+     "examples": [
+      "1",
+      "2",
+      "1"
+     ],
+     "min": 1.0,
+     "max": 122.0
+    },
+    {
+     "name": "n_categories",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 5,
+     "examples": [
+      "1",
+      "1",
+      "1"
+     ],
+     "min": 1.0,
+     "max": 5.0
+    },
+    {
+     "name": "works_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1483,
+     "examples": [
+      "27",
+      "3",
+      "57"
+     ],
+     "min": 3.0,
+     "max": 12493.0
+    },
+    {
+     "name": "cited_by_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 13168,
+     "examples": [
+      "1283",
+      "61",
+      "818"
+     ],
+     "min": 0.0,
+     "max": 359480.0
+    },
+    {
+     "name": "first_pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 199,
+     "examples": [
+      "2004",
+      "2014",
+      "1975"
+     ],
+     "min": 1556.0,
+     "max": 2019.0
+    },
+    {
+     "name": "last_pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 36,
+     "examples": [
+      "2023",
+      "2015",
+      "2023"
+     ],
+     "min": 1987.0,
+     "max": 2034.0
+    },
+    {
+     "name": "career_span",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 206,
+     "examples": [
+      "19",
+      "1",
+      "48"
+     ],
+     "min": 0.0,
+     "max": 470.0
+    },
+    {
+     "name": "last_country",
+     "dtype": "object",
+     "null_share": 0.0844,
+     "n_unique_in_sample": 160,
+     "examples": [
+      "NO",
+      "IN",
+      "DE"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "last_institution",
+     "dtype": "object",
+     "null_share": 0.0828,
+     "n_unique_in_sample": 9821,
+     "examples": [
+      "Akershus University Hospital",
+      "Indian Institute of Technology Kharagpur",
+      "Goethe University Frankfurt"
+     ],
+     "has_url_prefix": false,
+     "max_len": 128
+    },
+    {
+     "name": "country",
+     "dtype": "object",
+     "null_share": 0.0751,
+     "n_unique_in_sample": 143,
+     "examples": [
+      "NO",
+      "IN",
+      "US"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0152,
+     "n_unique_in_sample": 3915,
+     "examples": [
+      "S4306504555",
+      "S202381698",
+      "S2735282665"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "rw_journal",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4136,
+     "examples": [
+      "BMJ Paediatrics Open",
+      "PLoS One",
+      "JNCI Cancer Spectrum"
+     ],
+     "has_url_prefix": false,
+     "max_len": 249
+    },
+    {
+     "name": "rw_publisher",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 591,
+     "examples": [
+      "Springer - Biomed Central (BMC)",
+      "PLoS",
+      "Oxford University Press"
+     ],
+     "has_url_prefix": false,
+     "max_len": 382
+    }
+   ]
+  },
+  "phase04_papers": {
+   "path": "data/interim/phase04_papers.csv",
+   "rows_total": 7675847,
+   "rows_sampled": 200000,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1387,
+     "examples": [
+      "A5000000833",
+      "A5000000833",
+      "A5000000833"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "work_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 197457,
+     "examples": [
+      "W1991535018",
+      "W2052580787",
+      "W1942261062"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "doi",
+     "dtype": "object",
+     "null_share": 0.1165,
+     "n_unique_in_sample": 174117,
+     "examples": [
+      "10.1111/j.1469-7610.2008.01942.x",
+      "10.1186/1471-244x-10-56",
+      "10.1007/s00787-005-0521-4"
+     ],
+     "has_url_prefix": false,
+     "max_len": 106,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "float64",
+     "null_share": 0.0003,
+     "n_unique_in_sample": 111,
+     "examples": [
+      "2008.0",
+      "2010.0",
+      "2006.0"
+     ],
+     "min": 1869.0,
+     "max": 2027.0,
+     "integral_float": true
+    },
+    {
+     "name": "type",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 23,
+     "examples": [
+      "article",
+      "article",
+      "article"
+     ],
+     "has_url_prefix": false,
+     "max_len": 23
+    },
+    {
+     "name": "is_retracted_flag",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "is_focal_retraction",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "cited_by_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1353,
+     "examples": [
+      "349",
+      "265",
+      "180"
+     ],
+     "min": 0.0,
+     "max": 57508.0
+    },
+    {
+     "name": "counts_by_year",
+     "dtype": "object",
+     "null_share": 0.3267,
+     "n_unique_in_sample": 87539,
+     "examples": [
+      "2026:5|2025:22|2024:27|2023:25|2022:25|2021:22|2020:21|2019:13|2018:26|2017:21|2016:17|2015:32|2014:23|2013:21|2012:23",
+      "2026:15|2025:38|2024:20|2023:21|2022:27|2021:27|2020:26|2019:13|2018:6|2017:22|2016:9|2015:8|2014:9|2013:12|2012:9",
+      "2026:1|2025:9|2024:6|2023:5|2022:6|2021:9|2020:10|2019:5|2018:10|2017:14|2016:6|2015:14|2014:13|2013:11|2012:9"
+     ],
+     "has_url_prefix": false,
+     "max_len": 149
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.1044,
+     "n_unique_in_sample": 18877,
+     "examples": [
+      "S177929781",
+      "S94610253",
+      "S159275680"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "source_name",
+     "dtype": "object",
+     "null_share": 0.1044,
+     "n_unique_in_sample": 18828,
+     "examples": [
+      "Journal of Child Psychology and Psychiatry",
+      "BMC Psychiatry",
+      "European Child & Adolescent Psychiatry"
+     ],
+     "has_url_prefix": true,
+     "max_len": 497
+    }
+   ]
+  },
+  "phase05_candidates": {
+   "path": "data/interim/phase05_candidates.csv",
+   "rows_total": 727122,
+   "rows_sampled": 200000,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 186713,
+     "examples": [
+      "A5053057051",
+      "A5087515825",
+      "A5066691481"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "work_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 43026,
+     "examples": [
+      "W2055067932",
+      "W2055067932",
+      "W2055067932"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1572,
+     "examples": [
+      "S49878492",
+      "S49878492",
+      "S49878492"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 13,
+     "examples": [
+      "2014",
+      "2014",
+      "2014"
+     ],
+     "min": 2005.0,
+     "max": 2017.0
+    },
+    {
+     "name": "position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "first",
+      "middle",
+      "middle"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "is_corresponding",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "country",
+     "dtype": "object",
+     "null_share": 0.0793,
+     "n_unique_in_sample": 176,
+     "examples": [
+      "US",
+      "US",
+      "US"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    }
+   ]
+  },
+  "phase06_candidates_screened": {
+   "path": "data/interim/phase06_candidates_screened.csv",
+   "rows_total": 627992,
+   "rows_sampled": 200000,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 200000,
+     "examples": [
+      "A5000000143",
+      "A5000000572",
+      "A5000000618"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "n_candidate_papers",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 15,
+     "examples": [
+      "1",
+      "2",
+      "1"
+     ],
+     "min": 1.0,
+     "max": 17.0
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4266,
+     "examples": [
+      "S4210190818",
+      "S205019203",
+      "S156174673"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "cand_pub_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 18,
+     "examples": [
+      "2022",
+      "2021",
+      "2013"
+     ],
+     "min": 2005.0,
+     "max": 2022.0
+    },
+    {
+     "name": "position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "middle",
+      "middle",
+      "middle"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "is_corresponding",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "country",
+     "dtype": "object",
+     "null_share": 0.0738,
+     "n_unique_in_sample": 187,
+     "examples": [
+      "BR",
+      "PL",
+      "US"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "found",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "works_count",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1769,
+     "examples": [
+      "34.0",
+      "252.0",
+      "96.0"
+     ],
+     "min": 1.0,
+     "max": 2429356.0,
+     "integral_float": true
+    },
+    {
+     "name": "cited_by_count",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 24237,
+     "examples": [
+      "335.0",
+      "5594.0",
+      "2258.0"
+     ],
+     "min": 0.0,
+     "max": 758535.0,
+     "integral_float": true
+    },
+    {
+     "name": "first_pub_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 253,
+     "examples": [
+      "2011.0",
+      "2004.0",
+      "1998.0"
+     ],
+     "min": 1500.0,
+     "max": 2022.0,
+     "integral_float": true
+    },
+    {
+     "name": "last_pub_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 32,
+     "examples": [
+      "2023.0",
+      "2025.0",
+      "2026.0"
+     ],
+     "min": 2005.0,
+     "max": 2807.0,
+     "integral_float": true
+    },
+    {
+     "name": "last_country",
+     "dtype": "object",
+     "null_share": 0.103,
+     "n_unique_in_sample": 194,
+     "examples": [
+      "BR",
+      "PL",
+      "US"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "pass_found",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "pass_works",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "passes",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "True",
+      "True",
+      "True"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "career_span",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 264,
+     "examples": [
+      "12.0",
+      "21.0",
+      "28.0"
+     ],
+     "min": 0.0,
+     "max": 829.0,
+     "integral_float": true
+    },
+    {
+     "name": "income",
+     "dtype": "object",
+     "null_share": 0.0302,
+     "n_unique_in_sample": 4,
+     "examples": [
+      "UM",
+      "H",
+      "H"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "income_group",
+     "dtype": "object",
+     "null_share": 0.0302,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "higher",
+      "higher",
+      "higher"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    }
+   ]
+  },
+  "phase06_matches": {
+   "path": "data/interim/phase06_matches.csv",
+   "rows_total": 44239,
+   "rows_sampled": 44239,
+   "columns": [
+    {
+     "name": "treated_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 44239,
+     "examples": [
+      "A5101273469",
+      "A5016375932",
+      "A5113532832"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "control_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 44239,
+     "examples": [
+      "A5022681642",
+      "A5060769726",
+      "A5081528366"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "pseudo_retraction_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2020",
+      "2016",
+      "2017"
+     ],
+     "min": 2015.0,
+     "max": 2022.0
+    },
+    {
+     "name": "arm",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "HONEST_ERROR",
+      "AUTHOR_MISCONDUCT",
+      "HONEST_ERROR"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "treated_position",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 3,
+     "examples": [
+      "middle",
+      "middle",
+      "last"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "career_band",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4,
+     "examples": [
+      "senior (10-20y)",
+      "early (<5y)",
+      "senior (10-20y)"
+     ],
+     "has_url_prefix": false,
+     "max_len": 15
+    },
+    {
+     "name": "income_group",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "higher",
+      "higher",
+      "higher"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "treated_pre_pubs",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 567,
+     "examples": [
+      "9",
+      "3",
+      "13"
+     ],
+     "min": 0.0,
+     "max": 1918.0
+    },
+    {
+     "name": "control_pre_pubs",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 556,
+     "examples": [
+      "9",
+      "3",
+      "13"
+     ],
+     "min": 0.0,
+     "max": 2131.0
+    },
+    {
+     "name": "match_distance",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 714,
+     "examples": [
+      "0.0",
+      "0.0",
+      "0.0"
+     ],
+     "min": 0.0,
+     "max": 0.6981404642386753
+    }
+   ]
+  },
+  "phase07_control_queue": {
+   "path": "data/interim/phase07_control_queue.csv",
+   "rows_total": 44239,
+   "rows_sampled": 44239,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 44239,
+     "examples": [
+      "A5022681642",
+      "A5060769726",
+      "A5081528366"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "first_retraction_year",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 8,
+     "examples": [
+      "2020",
+      "2016",
+      "2017"
+     ],
+     "min": 2015.0,
+     "max": 2022.0
+    },
+    {
+     "name": "matched_arm",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 6,
+     "examples": [
+      "HONEST_ERROR",
+      "AUTHOR_MISCONDUCT",
+      "HONEST_ERROR"
+     ],
+     "has_url_prefix": false,
+     "max_len": 20
+    },
+    {
+     "name": "career_band",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4,
+     "examples": [
+      "senior (10-20y)",
+      "early (<5y)",
+      "senior (10-20y)"
+     ],
+     "has_url_prefix": false,
+     "max_len": 15
+    },
+    {
+     "name": "income_group",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "higher",
+      "higher",
+      "higher"
+     ],
+     "has_url_prefix": false,
+     "max_len": 6
+    },
+    {
+     "name": "first_category",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "CONTROL",
+      "CONTROL",
+      "CONTROL"
+     ],
+     "has_url_prefix": false,
+     "max_len": 7
+    },
+    {
+     "name": "first_position",
+     "dtype": "float64",
+     "null_share": 1.0,
+     "n_unique_in_sample": 0,
+     "examples": []
+    },
+    {
+     "name": "n_retractions",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "0",
+      "0",
+      "0"
+     ],
+     "min": 0.0,
+     "max": 0.0
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 4094,
+     "examples": [
+      "S161399637",
+      "S193386727",
+      "S75247133"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "last_country",
+     "dtype": "object",
+     "null_share": 0.0784,
+     "n_unique_in_sample": 160,
+     "examples": [
+      "US",
+      "US",
+      "GB"
+     ],
+     "has_url_prefix": false,
+     "max_len": 2
+    },
+    {
+     "name": "works_count",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1284,
+     "examples": [
+      "41.0",
+      "9.0",
+      "23.0"
+     ],
+     "min": 3.0,
+     "max": 85442.0,
+     "integral_float": true
+    },
+    {
+     "name": "first_pub_year",
+     "dtype": "float64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 184,
+     "examples": [
+      "2010.0",
+      "2012.0",
+      "2007.0"
+     ],
+     "min": 1597.0,
+     "max": 2021.0,
+     "integral_float": true
+    }
+   ]
+  },
+  "phase07_control_papers": {
+   "path": "data/interim/phase07_control_papers.csv",
+   "rows_total": 10325952,
+   "rows_sampled": 200000,
+   "columns": [
+    {
+     "name": "author_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 803,
+     "examples": [
+      "A5052870156",
+      "A5052870156",
+      "A5052870156"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "work_id",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 198963,
+     "examples": [
+      "W2017723219",
+      "W2904550907",
+      "W2982173985"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "doi",
+     "dtype": "object",
+     "null_share": 0.1015,
+     "n_unique_in_sample": 178545,
+     "examples": [
+      "10.1177/2165079915570917",
+      "10.1016/j.jviscsurg.2018.12.003",
+      "10.1186/s12877-019-1276-y"
+     ],
+     "has_url_prefix": false,
+     "max_len": 76,
+     "looks_like": "bare doi"
+    },
+    {
+     "name": "pub_year",
+     "dtype": "float64",
+     "null_share": 0.0003,
+     "n_unique_in_sample": 97,
+     "examples": [
+      "2015.0",
+      "2018.0",
+      "2019.0"
+     ],
+     "min": 1871.0,
+     "max": 2026.0,
+     "integral_float": true
+    },
+    {
+     "name": "type",
+     "dtype": "object",
+     "null_share": 0.0,
+     "n_unique_in_sample": 25,
+     "examples": [
+      "article",
+      "article",
+      "article"
+     ],
+     "has_url_prefix": false,
+     "max_len": 23
+    },
+    {
+     "name": "is_retracted_flag",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 2,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 1.0
+    },
+    {
+     "name": "is_focal_retraction",
+     "dtype": "bool",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1,
+     "examples": [
+      "False",
+      "False",
+      "False"
+     ],
+     "min": 0.0,
+     "max": 0.0
+    },
+    {
+     "name": "cited_by_count",
+     "dtype": "int64",
+     "null_share": 0.0,
+     "n_unique_in_sample": 1380,
+     "examples": [
+      "56",
+      "53",
+      "43"
+     ],
+     "min": 0.0,
+     "max": 19677.0
+    },
+    {
+     "name": "counts_by_year",
+     "dtype": "object",
+     "null_share": 0.3284,
+     "n_unique_in_sample": 89582,
+     "examples": [
+      "2026:2|2025:5|2024:5|2023:9|2022:8|2021:5|2020:9|2019:3|2018:4|2017:2|2016:3|2015:1",
+      "2026:4|2025:11|2024:5|2023:9|2022:5|2021:9|2020:8|2019:1",
+      "2026:1|2025:4|2024:11|2023:6|2022:4|2021:10|2020:7"
+     ],
+     "has_url_prefix": false,
+     "max_len": 142
+    },
+    {
+     "name": "source_id",
+     "dtype": "object",
+     "null_share": 0.1081,
+     "n_unique_in_sample": 15788,
+     "examples": [
+      "S169813748",
+      "S3330943",
+      "S14643628"
+     ],
+     "has_url_prefix": false,
+     "max_len": 11,
+     "looks_like": "bare OpenAlex id"
+    },
+    {
+     "name": "source_name",
+     "dtype": "object",
+     "null_share": 0.1081,
+     "n_unique_in_sample": 15754,
+     "examples": [
+      "Workplace Health & Safety",
+      "Journal of Visceral Surgery",
+      "BMC Geriatrics"
+     ],
+     "has_url_prefix": true,
+     "max_len": 295
+    }
+   ]
+  }
+ },
+ "benchmarks": {
+  "phase01_classified": {
+   "rows": 71799
+  },
+  "phase02_author_paper": {
+   "rows": 78107,
+   "unique authors": 63015,
+   "unique papers": 17330
+  },
+  "phase02_paper_level": {
+   "rows": 17330
+  },
+  "phase03_authors_screened": {
+   "rows": 63015
+  },
+  "phase04_author_queue": {
+   "rows": 55202
+  },
+  "phase04_papers": {
+   "rows": 7675847,
+   "authors extracted": 55202
+  },
+  "phase05_candidates": {
+   "rows": 727122,
+   "unique candidates": 627992
+  },
+  "phase06_candidates_screened": {
+   "rows": 627992
+  },
+  "phase06_matches": {
+   "rows": 44239,
+   "treated matched": 44239
+  },
+  "phase07_control_queue": {
+   "rows": 44239
+  },
+  "phase07_control_papers": {
+   "rows": 10325952,
+   "controls extracted": 44347
+  }
+ }
+}
