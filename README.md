@@ -78,6 +78,5 @@ be added on publication.
 
 ## License
 
-Code is released under the MIT License. Derived data are released under
-CC BY 4.0. Retraction Watch and OpenAlex data remain subject to their
-respective terms.
+Derived data are released under CC BY 4.0. Retraction Watch and 
+OpenAlex data remain subject to their respective terms.
