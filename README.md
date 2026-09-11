@@ -13,27 +13,27 @@ error, editorial compromise) and by byline position.
 
 ```
 src/
-  snapshot.py                  streaming reader for the OpenAlex parquet snapshot
-  snapshot_config.example.py   template for the local snapshot path
+  snapshot.py                            # streaming reader for the OpenAlex parquet snapshot
+  snapshot_config.example.py             # template for the local snapshot path
 notebooks/
-  phase01_taxonomy.ipynb       112 reason labels -> attribution categories
-  phase02_doi_merge.ipynb      DOI merge, author extraction, byline position
+  phase01_taxonomy.ipynb                 # 112 reason labels -> attribution categories
+  phase02_doi_merge.ipynb                # DOI merge, author extraction, byline position
   phase03_author_screening.ipynb
   phase04_treated_histories.ipynb
   phase05_control_candidates.ipynb
-  phase06_matching.ipynb       exact + nearest-neighbour matching
+  phase06_matching.ipynb                 # exact + nearest-neighbour matching
   phase07_control_histories.ipynb
-  phase08_panel_treated.ipynb  treated author-year panels
-  phase09_estimation_treated.ipynb   treated-only event studies, byline, placebo
-  phase10_heterogeneity.ipynb  pre-declared subgroup tests
-  phase11_panel_controls.ipynb combined panel with matched controls
-  phase12_estimation_controls.ipynb  estimates vs controls, equivalence tests
-  phase13_callaway_santanna.ipynb    staggered-adoption estimator
-  figures.ipynb                manuscript figures
+  phase08_panel_treated.ipynb            # treated author-year panels
+  phase09_estimation_treated.ipynb       # treated-only event studies, byline, placebo
+  phase10_heterogeneity.ipynb            # pre-declared subgroup tests
+  phase11_panel_controls.ipynb           # combined panel with matched controls
+  phase12_estimation_controls.ipynb      # estimates vs controls, equivalence tests
+  phase13_callaway_santanna.ipynb        # staggered-adoption estimator
+  figures.ipynb                          # manuscript figures
 data/
-  interim/                     panels written by the pipeline
-  results/                     coefficient and test tables
-figures/                       generated PNG and PDF
+  interim/                               # panels written by the pipeline
+  results/                               # coefficient and test tables
+figures/                                 # generated PNG and PDF
 ```
 
 ## Data sources
